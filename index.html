@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>OE Star Research Group Homepage</title>
+  <meta name="description"
+    content="Official homepage of the OE STAR Research Group at the University of Florence. Pioneering research in Systems Technology, Analysis, and Operational Excellence.">
+  <meta name="keywords"
+    content="OE STAR, University of Florence, Operational Excellence, Systems Technology, Research Group, Engineering, Italy">
+  <meta property="og:title" content="OE STAR Research Group - University of Florence">
+  <meta property="og:description"
+    content="Advancing the Frontiers of Operational Excellence through rigorous research and innovation.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#5DA295", // Teal from the logo
+            "background-light": "#f8fafc", // A very light gray (slate-50)
+            "background-dark": "#0f172a", // A dark blue-gray (slate-900)
+            "text-light": "#020617", // near black (slate-950)
+            "text-dark": "#f1f5f9", // light gray (slate-100)
+            "surface-light": "#ffffff", // white
+            "surface-dark": "#1e293b", // slate-800
+            "border-light": "#e2e8f0", // slate-200
+            "border-dark": "#334155", // slate-700
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased">
+  <div class="flex flex-col min-h-screen">
+    <header
+      class="sticky top-0 z-50 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex items-center space-x-4">
+            <img src="images/star.png" class="h-10 w-auto" alt="OE STAR Logo">
+            <span class="text-xl font-bold tracking-tight text-text-light dark:text-text-dark">OE STAR Research
+              Group</span>
+          </div>
+          <nav class="hidden md:flex items-center space-x-8">
+            <a class="text-sm font-bold text-primary" href="#">Home</a>
+            <a class="text-sm font-medium text-[#0d1b19] dark:text-white hover:text-primary dark:hover:text-primary transition-colors"
+              href="about.html">About Us</a>
+            <a class="text-sm font-medium text-[#0d1b19] dark:text-white hover:text-primary dark:hover:text-primary transition-colors"
+              href="research.html">Research</a>
+            <a class="text-sm font-medium text-[#0d1b19] dark:text-white hover:text-primary dark:hover:text-primary transition-colors"
+              href="publications.html">Publications</a>
+            <a class="text-sm font-medium text-[#0d1b19] dark:text-white hover:text-primary dark:hover:text-primary transition-colors"
+              href="team.html">Team</a>
+            <a class="text-sm font-medium text-[#0d1b19] dark:text-white hover:text-primary dark:hover:text-primary transition-colors"
+              href="#contact">Contact</a>
+            <a class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#0d1b19] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-80 transition-colors"
+              href="#contact">
+              <span class="truncate">Get In Touch</span>
+            </a>
+          </nav>
+          <button id="mobile-menu-btn" aria-label="Toggle mobile menu"
+            class="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="hidden md:hidden bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark">
+        <div class="px-4 pt-2 pb-4 space-y-1">
+          <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800"
+            href="about.html">About Us</a>
+          <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800"
+            href="research.html">Research Areas</a>
+          <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800"
+            href="publications.html">Publications</a>
+          <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800"
+            href="team.html">Team</a>
+          <a class="block px-3 py-2 rounded-md text-base font-medium text-primary font-semibold hover:bg-gray-50 dark:hover:bg-gray-800"
+            href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <section class="relative py-24 md:py-32 bg-surface-light dark:bg-surface-dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div class="flex justify-center mb-8">
+            <img alt="OE STAR Group Logo" class="h-32 md:h-40 w-auto" src="images/logo.png" width="160" height="160" />
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-text-light dark:text-text-dark">
+            Advancing the Frontiers of Operational Excellence</h1>
+          <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 dark:text-gray-400">
+            A research group at the University of Florence dedicated to pioneering research in Systems Technology,
+            Analysis, and Operational Excellence.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:opacity-90 transition-opacity shadow-lg"
+              href="research.html">
+              Explore Our Research
+            </a>
+            <a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 border border-border-light dark:border-border-dark text-base font-medium rounded-lg text-primary bg-surface-light dark:bg-surface-dark hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors shadow-lg"
+              href="publications.html">
+              View Publications
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 md:py-28" id="about">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-sm font-semibold text-primary uppercase tracking-wide">Our Mission</h2>
+            <p class="mt-3 text-3xl md:text-4xl font-bold tracking-tight text-text-light dark:text-text-dark">Driving
+              Innovation Through Rigorous Research</p>
+            <p class="mt-6 text-lg text-gray-600 dark:text-gray-400">
+              The OE STAR research group is committed to solving complex operational challenges across industries. Our
+              interdisciplinary team leverages cutting-edge technology and analytical methods to develop robust systems,
+              enhance efficiency, and create sustainable value. We collaborate with academic and industry partners to
+              translate theoretical insights into practical, real-world applications.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 md:py-28 bg-surface-light dark:bg-surface-dark" id="research">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-text-light dark:text-text-dark">Core Research
+              Areas</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">
+              Our work is concentrated in three synergistic domains that form the foundation of our group.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-background-light dark:bg-background-dark p-8 rounded-xl shadow-md border border-border-light dark:border-border-dark">
+              <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mb-6">
+                <span class="material-symbols-outlined text-3xl text-primary">engineering</span>
+              </div>
+              <h3 class="text-xl font-semibold text-text-light dark:text-text-dark">Systems Technology</h3>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">Investigating and developing advanced technologies for
+                complex systems, including AI, machine learning, and IoT for industrial applications.</p>
+            </div>
+            <div
+              class="bg-background-light dark:bg-background-dark p-8 rounded-xl shadow-md border border-border-light dark:border-border-dark">
+              <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mb-6">
+                <span class="material-symbols-outlined text-3xl text-primary">query_stats</span>
+              </div>
+              <h3 class="text-xl font-semibold text-text-light dark:text-text-dark">Analysis</h3>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">Applying sophisticated data analysis, simulation, and
+                modeling techniques to understand and optimize system performance and decision-making processes.</p>
+            </div>
+            <div
+              class="bg-background-light dark:bg-background-dark p-8 rounded-xl shadow-md border border-border-light dark:border-border-dark">
+              <div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mb-6">
+                <span class="material-symbols-outlined text-3xl text-primary">trending_up</span>
+              </div>
+              <h3 class="text-xl font-semibold text-text-light dark:text-text-dark">Operational Excellence</h3>
+              <p class="mt-3 text-gray-600 dark:text-gray-400">Focusing on the methodologies and management principles
+                that lead to superior performance, including lean manufacturing and quality control.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+          <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
+            <div>
+              <h2 class="text-3xl font-bold tracking-tight text-white">Join Our Research Community</h2>
+              <p class="mt-3 text-lg text-white/80">
+                We are always looking for talented researchers and collaborators. Explore opportunities to work with us.
+              </p>
+            </div>
+            <a class="flex-shrink-0 inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-primary bg-white hover:bg-gray-100 transition-colors shadow-lg"
+              href="#contact">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark"
+      id="contact">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="md:col-span-2">
+            <div class="flex items-center space-x-3 mb-4">
+              <svg aria-hidden="true" class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 0L61.23 38.77L100 50L61.23 61.23L50 100L38.77 61.23L0 50L38.77 38.77L50 0Z"></path>
+                <path d="M50 25L57.5 42.5L75 50L57.5 57.5L50 75L42.5 57.5L25 50L42.5 42.5L50 25Z" fill-opacity="0.5">
+                </path>
+              </svg>
+              <span class="text-lg font-semibold">OE STAR Research Group</span>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400">University of Florence</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Florence, Italy</p>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-wider text-text-light dark:text-text-dark">Quick Links
+            </h3>
+            <ul class="mt-4 space-y-2">
+              <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary"
+                  href="../about_us_-_oe_star/code.html">About Us</a></li>
+              <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary"
+                  href="../research_areas_-_oe_star/code.html">Research</a></li>
+              <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary"
+                  href="../publications_-_oe_star/code.html">Publications</a></li>
+              <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary"
+                  href="../team_-_oe_star/code.html">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold uppercase tracking-wider text-text-light dark:text-text-dark">Connect</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary" href="#">Email</a></li>
+              <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary" href="#">LinkedIn</a></li>
+              <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary" href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-12 border-t border-border-light dark:border-border-dark pt-8 text-center text-sm text-gray-500 dark:text-gray-400">
+          <p>© 2024 OE STAR Research Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

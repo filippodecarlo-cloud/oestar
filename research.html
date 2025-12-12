@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Research Areas - OE Star</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5DA295",
+            "background-light": "#f6f8f8",
+            "background-dark": "#10221f",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="font-display">
+  <div
+    class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1 px-4 sm:px-10">
+          <!-- TopNavBar Component -->
+          <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-black/10 dark:border-b-white/10 py-3">
+            <div class="flex items-center gap-4 text-black dark:text-white">
+              <div class="size-6 text-primary">
+                <img src="images/star.png" class="h-6 w-auto" alt="OE STAR Logo">
+              </div>
+              <h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">OE Star</h2>
+            </div>
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-[#0d1b19] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                  href="index.html">Home</a>
+                <a class="text-[#0d1b19] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                  href="about.html">About Us</a>
+                <a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">Research</a>
+                <a class="text-[#0d1b19] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                  href="publications.html">Publications</a>
+                <a class="text-[#0d1b19] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                  href="team.html">Team</a>
+                <a class="text-[#0d1b19] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                  href="index.html#contact">Contact</a>
+              </div>
+              <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#0d1b19] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-80 transition-colors"
+                href="index.html#contact">
+                <span class="truncate">Get In Touch</span>
+              </a>
+            </div>
+          </header>
+          <!-- HeroSection Component -->
+          <div class="@container">
+            <div class="flex flex-col gap-6 py-10 @[864px]:flex-row @[864px]:gap-12">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[864px]:w-full @[864px]:aspect-[4/3]"
+                data-alt="A modern research lab with scientific equipment and researchers collaborating."
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZ4nDCHnRSrZu7uekGlaDixgSS5aolRFrjmlN209PeRua_L0Y3FevmsPzaYyrWpeY5hHqzZ_76ZWzpSMD6P4kg-Z2IFCvplKq05giFqT-kulWh3uRSTOqbwho_-st1mV0d8rzQeW8cvSXo8xh5ukxZLqkvPNnLr2T56QuEQkTKDJZXIXfs-BOBbqefUhMO4Ye2uj-yo9yPxPr0VWbWIFnmrUry3uGtyw4gXTP34xbOye_Jjp-fv16XmQgZzhUeMCBsvr0tZzjTawQ");'>
+              </div>
+              <div class="flex flex-col gap-6 @[864px]:justify-center">
+                <div class="flex flex-col gap-2 text-left">
+                  <h1
+                    class="text-black dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                    Our Research Areas
+                  </h1>
+                  <h2 class="text-black/70 dark:text-white/70 text-base font-normal leading-normal">
+                    Explore the core domains of our research at OE Star, from advancing Operational Excellence
+                    methodologies to pioneering Systems Technology Analysis. Our work is dedicated to solving complex
+                    industrial challenges through rigorous academic inquiry and practical application.
+                  </h2>
+                </div>
+                <a class="flex self-start min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-black dark:text-black text-base font-bold leading-normal tracking-[0.015em]"
+                  href="about.html">
+                  <span class="truncate">Learn About Our Mission</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Chips Component -->
+          <div class="flex gap-3 py-3 flex-wrap border-t border-b border-solid border-black/10 dark:border-white/10">
+            <div
+              class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+              <p class="text-black dark:text-black text-sm font-bold leading-normal">All</p>
+            </div>
+            <div
+              class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-black/5 dark:bg-white/10 pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+              <p class="text-black dark:text-white text-sm font-medium leading-normal">Operational Excellence</p>
+            </div>
+            <div
+              class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-black/5 dark:bg-white/10 pl-4 pr-4 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+              <p class="text-black dark:text-white text-sm font-medium leading-normal">Systems Technology</p>
+            </div>
+          </div>
+          <!-- SectionHeader Component -->
+          <h2 class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pt-10 pb-3">
+            Operational Excellence</h2>
+          <!-- ImageGrid Component -->
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                data-alt="Diagram showing process optimization and waste reduction flow."
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCZefjXYyV56q0hq2UuhwUnUiCqNZFa4yXLlAqi1uF-A0dEsDRf5AbZMmG4eLNDi9ldTZZES0tJnHkNvC97JctjFQb_kBWwi7n4sgNjYyxjl8KXx_dFLINWAx8ErfnkCwved8kclnG-Ih4qBiLCe7PRIBD9l9TDPizMh0u5Si0SYE3CBIhrCKSJbaNzLQZHXs8wSRidrOpTRme1Qf6-EgJGkBj-UTRm-A64-x92Qw55jYs8qfMt0KoU51EmFg6XiCDsFXVTzfBugQ");'>
+              </div>
+              <div>
+                <p class="text-black dark:text-white text-base font-medium leading-normal">Lean Management</p>
+                <p class="text-black/70 dark:text-white/70 text-sm font-normal leading-normal">Optimizing processes to
+                  maximize value and minimize waste.</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                data-alt="A statistical chart with a bell curve representing Six Sigma quality control."
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSp8L5hwoJqNKGKi2ixVfjkIlfHmL0pUkYj8qplvLQgRAGuVoe4QHWgYGCdyBUPgWXtWaU0Ck6CPSJo6j_JNZF-47YJZi6hauPtC0TBLufKlmZLltV33MzRBTNA7kg1H9W3rl6j8EGhthnzK4gLQS_KHzC8wdNPwLysVCalrNdCeZxA54aVASQAwWpdVGb_aplvfzDGDx_ymkoG02Vo534RRntVmsMvGnOJwiPZA7IK7at7VhVnZNBIDPH9QwmlzxaFTUoLFfxsZo");'>
+              </div>
+              <div>
+                <p class="text-black dark:text-white text-base font-medium leading-normal">Six Sigma</p>
+                <p class="text-black/70 dark:text-white/70 text-sm font-normal leading-normal">A data-driven approach to
+                  eliminate defects and improve quality.</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                data-alt="A logistics warehouse with automated robots and packages on conveyor belts."
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHhwQ8Vl3P-0jm8ZnK8nzBE0pGKY15U_AX29e16CV_gedXhjoGLTCBBShStoS42cDBkJuXQ9WuEDh_7b4OsrvNyQwBkqLDvd2BrdmWCkxs_bp-U4uDhyI2XO22HXr2bLFkiXHjcXUV-x3L5Ezc0Kq3OfPJWt83kPBtszk-lYWJ7SV5EiDtWKN1ggiaT23KPOJEADcLXuEOOstlTXvgMHDDACFMVdHLx6dwnGKHb011lKiYIL5-WpV9dLWGwKVSDw6sa9nYXfKCf3s");'>
+              </div>
+              <div>
+                <p class="text-black dark:text-white text-base font-medium leading-normal">Supply Chain Optimization</p>
+                <p class="text-black/70 dark:text-white/70 text-sm font-normal leading-normal">Enhancing efficiency and
+                  resilience in global supply networks.</p>
+              </div>
+            </div>
+          </div>
+          <!-- SectionHeader Component -->
+          <h2 class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pt-10 pb-3">
+            Systems Technology Analysis</h2>
+          <!-- ImageGrid Component -->
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                data-alt="An industrial factory with interconnected digital icons representing Industry 4.0."
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAW4eDmWgSg1F4o1NisGIQDs2Mw5rtirYZMLWRwq2C1VHHCbHzzap_yoViSe6zm_DdOiPy23Iy13IJkRrhtuS1hLvl0U1kXr4bQskAeBN-T-yWVpFGIgh4LmvleZ4FBSJC3tBfyUgbuzs5_wnlTV_YEYg7pOzA-gL6OmFOsDiKjByOGftnG1yyH419PKaAXQkkC-opNetZvcI9acRaF9IXMiXBhdEZNYuqfq3wCuTsk6xjogJoU4eFnwuEUKaetC3vBJbaX-nkuhBo");'>
+              </div>
+              <div>
+                <p class="text-black dark:text-white text-base font-medium leading-normal">Industry 4.0</p>
+                <p class="text-black/70 dark:text-white/70 text-sm font-normal leading-normal">Integrating smart
+                  technologies into manufacturing and industrial processes.</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                data-alt="A holographic 3D model of a jet engine, representing a digital twin."
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4ShQN64XxOD2wUHWoq-UIFnF9A24xm7t8RHoArYE1UwdKroRe9FzjP4tSo6AjB1uSJgEosH8Nw6SmJdTEDc5tVOLDiYDAobs6EOXPQ_9Pa5GmOzuT9ViOAlq2QB4mJFXovmxxBc53g3DQg3neYWiwfRsMyJzo_8NqQ1Aod09dU8HwH22zlkwtP6sDjGddwPdjx6ohUmspKmGRrtjTLesHUtJ7cYu9vtZufdWE5fZLZ7neXtpz9EJk6nmpLoV8lbwqHOaA0WKP-N0");'>
+              </div>
+              <div>
+                <p class="text-black dark:text-white text-base font-medium leading-normal">Digital Twins</p>
+                <p class="text-black/70 dark:text-white/70 text-sm font-normal leading-normal">Creating virtual models
+                  of physical assets for simulation and analysis.</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                data-alt="A computer screen showing complex data streams and predictive analytics graphs."
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbzq2KGDvoiLhMFC3d75SrgFlDcAoAgkY9GQMHy3genZ2PMX6aZXX0QqEDjcBs8IDOPZvQOGRBcuVpH_6ClsIaVHuTBaHgTnjr43SmTivBYJxPhxrEFquVD8RNQVjna1__W1hHxCJj45P5iUwfsCqNpvYdLRxnwXu4hQvt8maa9Ux3Xw9YAALxM2vWOM4-yJL6gtkLbhaZ7AdjDO4Xb0DZARrY0Za3Wwe7ibbCb-T303iaZBX_Sjr7jz0ZIujt-xATkBEAotwqK2Y");'>
+              </div>
+              <div>
+                <p class="text-black dark:text-white text-base font-medium leading-normal">Predictive Maintenance</p>
+                <p class="text-black/70 dark:text-white/70 text-sm font-normal leading-normal">Using data analysis to
+                  predict equipment failures before they happen.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Component -->
+          <footer
+            class="mt-20 py-10 border-t border-solid border-black/10 dark:border-white/10 text-black/60 dark:text-white/60">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+              <div class="flex items-center gap-3">
+                <div class="size-5 text-primary">
+                  <img src="images/logo.png" class="h-5 w-auto" alt="OE STAR Logo">
+                </div>
+                <p class="text-sm">© 2024 OE Star, University of Florence. All rights reserved.</p>
+              </div>
+              <div class="flex items-center gap-4 text-sm">
+                <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
